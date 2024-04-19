@@ -55,7 +55,7 @@ public class ReportController {
         return generateResponseEntity(bis, "user_report.csv");
     }
 
-    @GetMapping
+
     public ResponseEntity<byte[]> generateResponseEntity(ByteArrayInputStream bis, String filename) {
         try {
             byte[] reportBytes = bis.readAllBytes();

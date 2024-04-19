@@ -6,10 +6,7 @@ import com.kelompokdua.booking.entity.Payment;
 import com.kelompokdua.booking.entity.Rooms;
 import com.kelompokdua.booking.entity.User;
 import jakarta.persistence.*;
-import jakarta.validation.constraints.NotEmpty;
-import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Future;
-import jakarta.validation.constraints.Size;
+import jakarta.validation.constraints.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -31,6 +28,7 @@ public class RoomBookingRequest {
     private String roomId;
 
     private String equipmentId;
+    @Min(0)
     private Integer qtyEquipment;
 
     @NotNull

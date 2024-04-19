@@ -35,13 +35,13 @@ public class OpenAPIConfig {
         License exampleLicense = new License().name("Example License").url("https://example.com");
 
         Map<String, Object> extensions = new HashMap<>();
-        extensions.put("x-created-by", "Kevin Dwi Rizky, Wahyu Pratama, M Taufiq Firmansyah, Alifia Kireina K, Abdian Ramdhnie");
+        extensions.put("x-created-by", "Kevin Dwi ");
 
         Info info = new Info()
                 .title("ENIGMA BOOKING MANAGEMENT")
                 .version("1.0")
                 .contact(contact)
-                .description("This API exposes endpoints to manage ENIGMA booking by \n KELOMPOK 2 \n 1.Kevin Dwi Rizky \n 2.Romano Willy Smith \n 3.M Taufiq Firmansyah \n 4.Alifia Kireina K \n 5.Abdian Ramdhnie \n")
+                .description("This API exposes endpoints to manage ")
                 .termsOfService("https://www.example.com/terms")
                 .license(exampleLicense)
                 .extensions(extensions);
